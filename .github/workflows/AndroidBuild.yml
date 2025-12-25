@@ -22,9 +22,7 @@ jobs:
         uses: gradle/actions/setup-gradle@v5
 
       - name: Build with Gradle
-        uses: gradle/gradle-build-action@v3
-      - with:
-      - arguments: build
+        uses: gradle/actions@v5.0.0
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v6.0.0
